@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="textInputStyle">@style/AppStyle.TextInput</item>
+    </style>
+
+    <style name="AppStyle.TextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceMediumComponent</item>
+        <item name="materialThemeOverlay">@style/AppStyle.TextInput.Overlay</item>
+        <item name="boxBackgroundColor">#efefef</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+    <style name="AppStyle.TextInput.Overlay" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="editTextStyle">@style/AppStyle.EditText</item>
+    </style>
+
+    <style name="AppStyle.EditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textAppearance">@style/AppTextAppearance</item>
+    </style>
+
+    <style name="AppTextAppearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
